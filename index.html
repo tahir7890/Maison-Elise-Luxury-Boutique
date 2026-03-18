@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Maison Élise — Luxury boutique fashion store. Discover curated collections of premium womenswear, accessories, and more." />
+  <title>Maison Élise — Luxury Boutique</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Font Awesome 6 -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet" />
+  <!-- Custom Styles -->
+  <link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+
+  <!-- ════════════════════════════════════════════════════
+       NAVIGATION BAR
+  ═══════════════════════════════════════════════════════ -->
+  <nav id="mainNav" class="fixed-top">
+    <div class="container-fluid px-0">
+      <div class="navbar-inner">
+
+        <!-- Logo -->
+        <a href="#hero" class="navbar-logo">
+          <span class="logo-main">Maison Élise</span>
+          <span class="logo-sub">Paris · London · New York</span>
+        </a>
+
+        <!-- Desktop links -->
+        <ul class="navbar-links">
+          <li><a href="#hero"          data-section="hero">Home</a></li>
+          <li><a href="#products"      data-section="products">Shop</a></li>
+          <li><a href="#about"         data-section="about">About</a></li>
+          <li><a href="#testimonials"  data-section="testimonials">Reviews</a></li>
+          <li><a href="#newsletter"    data-section="newsletter">Contact</a></li>
+        </ul>
+
+        <!-- Actions -->
+        <div class="navbar-actions">
+          <button class="nav-icon-btn" title="Search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+          <button class="nav-icon-btn" title="Wishlist">
+            <i class="fa-regular fa-heart"></i>
+          </button>
+          <button class="nav-icon-btn" title="Shopping bag">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <span class="cart-count" id="cartCount">2</span>
+          </button>
+          <!-- Hamburger (mobile) -->
+          <button class="hamburger" id="hamburger" aria-expanded="false" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#products">Shop</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#testimonials">Reviews</a></li>
+      <li><a href="#newsletter">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- ════════════════════════════════════════════════════
+       HERO SECTION
+  ═══════════════════════════════════════════════════════ -->
+  <section id="hero">
+    <div class="hero-bg-left"></div>
+    <div class="hero-grain"></div>
+    <div class="hero-accent-line"></div>
+
+    <div class="container-fluid px-0">
+      <div class="row g-0 align-items-center" style="min-height:100vh;">
+
+        <!-- Text Column -->
+        <div class="col-lg-6 col-xl-5 offset-xl-1 hero-content px-4 px-lg-5">
+
+          <div class="hero-eyebrow hero-anim-1">
+            New Collection 2026
+          </div>
+
+          <h1 class="hero-headline hero-anim-2">
+            <span>Discover</span>
+            <em>Your</em>
+            <strong>Style.</strong>
+          </h1>
+
+          <p class="hero-desc hero-anim-3">
+            Curated pieces for the modern woman. Every garment tells a story of craftsmanship, heritage, and timeless elegance.
+          </p>
+
+          <div class="hero-cta hero-anim-4">
+            <a href="#products" class="btn-primary-custom">
+              Shop Now <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="#about" class="btn-outline-custom" style="color:rgba(248,244,238,.7);border-color:rgba(248,244,238,.25);">
+              Our Story
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Image Column -->
+        <div class="col-lg-6 hero-anim-5">
+          <div class="hero-image-panel">
+            <!-- Gradient fashion placeholder — replace src with your photo -->
+            <div style="width:100%;height:100%;min-height:600px;background:linear-gradient(160deg,#2c2820 0%,#1a1814 35%,#3d3830 70%,#2c2820 100%);display:flex;align-items:center;justify-content:center;position:relative;">
+              <!-- Decorative fashion silhouette -->
+              <div style="font-size:14rem;opacity:.04;user-select:none;position:absolute;">👗</div>
+              <!-- Layered gradient panels -->
+              <div style="position:absolute;inset:0;background:radial-gradient(ellipse 70% 90% at 60% 50%,rgba(201,169,110,.08) 0%,transparent 70%);"></div>
+              <div style="position:absolute;bottom:0;left:0;right:0;height:40%;background:linear-gradient(to top,rgba(201,169,110,.06),transparent);"></div>
+              <!-- Centered text editorial style -->
+              <div style="text-align:center;position:relative;z-index:2;padding:2rem;">
+                <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(3rem,8vw,7rem);font-weight:300;color:rgba(248,244,238,.08);letter-spacing:.1em;line-height:1;pointer-events:none;user-select:none;">ÉLISE</div>
+              </div>
+            </div>
+
+            <!-- Floating badge -->
+            <div class="hero-img-badge">
+              <div class="badge-num">500+</div>
+              <div class="badge-label">Premium Styles</div>
+            </div>
+
+            <!-- Floating info card -->
+            <div class="hero-float-card">
+              <div class="hero-float-icon"><i class="fa-solid fa-star"></i></div>
+              <div>
+                <div style="font-weight:600;font-size:.85rem;">New In</div>
+                <div style="font-size:.75rem;color:rgba(201,169,110,.8);">Spring Collection '26</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Scroll hint -->
+    <div class="hero-scroll-hint">
+      <div class="scroll-mouse"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════
+       MARQUEE STRIP
+  ═══════════════════════════════════════════════════════ -->
+  <div class="marquee-strip" aria-hidden="true">
+    <div class="marquee-track">
+      <!-- Doubled for seamless loop -->
+      <span class="marquee-item"><i class="fa-solid fa-circle"></i>New Arrivals</span>
+      <span class="marquee-item"><i class="fa-solid fa-circle"></i>Free Shipping Over $150</span>
+      <span class="marquee-item"><i class="fa-solid fa-circle"></i>Spring Collection 2026</span>
+      <span class="marquee-item"><i class="fa-solid fa-circle"></i>Premium Quality</span>
+      <span class="marquee-item"><i class="fa-solid fa-circle"></i>Easy Returns</span>
+      <span class="marquee-item"><i class="fa-solid fa-circle"></i>Sustainable Fashion</span>
+      <span class="marquee-item"><i class="fa-solid fa-circle"></i>New Arrivals</span>
+      <span class="marquee-item"><i class="fa-solid fa-circle"></i>Free Shipping Over $150</span>
+      <span class="marquee-item"><i class="fa-solid fa-circle"></i>Spring Collection 2026</span>
+      <span class="marquee-item"><i class="fa-solid fa-circle"></i>Premium Quality</span>
+      <span class="marquee-item"><i class="fa-solid fa-circle"></i>Easy Returns</span>
+      <span class="marquee-item"><i class="fa-solid fa-circle"></i>Sustainable Fashion</span>
+    </div>
+  </div>
+
+  <!-- ════════════════════════════════════════════════════
+       FEATURES SECTION
+  ═══════════════════════════════════════════════════════ -->
+  <section id="features">
+    <div class="container">
+
+      <div class="text-center mb-5">
+        <div class="section-tag" data-anim="fade-up">Why Choose Us</div>
+        <h2 class="section-title" data-anim="fade-up" data-delay="100">
+          The Élise <em>Promise</em>
+        </h2>
+      </div>
+
+      <div class="row g-4">
+
+        <div class="col-lg-4 col-md-6" data-anim="fade-up" data-delay="100">
+          <div class="feature-card">
+            <div class="feature-icon"><i class="fa-solid fa-truck-fast"></i></div>
+            <div class="feature-title">Free Delivery</div>
+            <p class="feature-desc">Complimentary shipping on all orders over $150. Express and overnight options available for special occasions.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6" data-anim="fade-up" data-delay="200">
+          <div class="feature-card">
+            <div class="feature-icon"><i class="fa-solid fa-gem"></i></div>
+            <div class="feature-title">Premium Quality</div>
+            <p class="feature-desc">Every piece is crafted from the finest materials, selected with care. We stand behind every thread, seam, and stitch.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6" data-anim="fade-up" data-delay="300">
+          <div class="feature-card">
+            <div class="feature-icon"><i class="fa-solid fa-rotate-left"></i></div>
+            <div class="feature-title">Easy Returns</div>
+            <p class="feature-desc">30-day hassle-free returns. If it doesn't feel perfect, we make it right — no questions asked.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6" data-anim="fade-up" data-delay="100">
+          <div class="feature-card">
+            <div class="feature-icon"><i class="fa-solid fa-shield-halved"></i></div>
+            <div class="feature-title">Secure Payments</div>
+            <p class="feature-desc">Shop with confidence. All transactions are encrypted and protected with industry-leading security.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6" data-anim="fade-up" data-delay="200">
+          <div class="feature-card">
+            <div class="feature-icon"><i class="fa-solid fa-leaf"></i></div>
+            <div class="feature-title">Sustainable</div>
+            <p class="feature-desc">Ethically sourced, eco-conscious packaging, and carbon-neutral shipping. Fashion that cares for the planet.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6" data-anim="fade-up" data-delay="300">
+          <div class="feature-card">
+            <div class="feature-icon"><i class="fa-solid fa-headset"></i></div>
+            <div class="feature-title">Style Concierge</div>
+            <p class="feature-desc">Dedicated personal stylists available 7 days a week to help you find the perfect look for any occasion.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════
+       PRODUCTS SECTION
+  ═══════════════════════════════════════════════════════ -->
+  <section id="products">
+    <div class="container">
+
+      <!-- Heading -->
+      <div class="text-center mb-2">
+        <div class="section-tag" data-anim="fade-up">The Collection</div>
+        <h2 class="section-title" data-anim="fade-up" data-delay="100">
+          New <em>Arrivals</em>
+        </h2>
+        <p class="section-sub mx-auto mt-3" data-anim="fade-up" data-delay="200" style="text-align:center">
+          Hand-selected pieces from our Spring/Summer 2026 collection — each one a quiet statement of refinement.
+        </p>
+      </div>
+
+      <!-- Filter Buttons -->
+      <div class="filter-wrap mt-4 mb-5" data-anim="fade-up" data-delay="200">
+        <button class="filter-btn active" data-filter="all">All Items</button>
+        <button class="filter-btn" data-filter="dresses">Dresses</button>
+        <button class="filter-btn" data-filter="tops">Tops</button>
+        <button class="filter-btn" data-filter="accessories">Accessories</button>
+        <button class="filter-btn" data-filter="outerwear">Outerwear</button>
+      </div>
+
+      <!-- Product Grid -->
+      <div class="row g-4">
+
+        <!-- Product 1 -->
+        <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-category="dresses" data-anim="fade-up" data-delay="100">
+          <div class="product-card">
+            <div class="product-img-wrap">
+              <div class="placeholder-img" style="background:linear-gradient(160deg,#e8ddd0,#d4c9bc);">🌸</div>
+              <div class="product-badge badge-new">New</div>
+              <button class="product-wish" title="Add to wishlist"><i class="fa-regular fa-heart"></i></button>
+              <div class="product-overlay">
+                <button class="product-overlay-btn">
+                  <i class="fa-solid fa-bag-shopping me-2"></i>Add to Bag
+                </button>
+              </div>
+            </div>
+            <div class="product-body">
+              <div class="product-category">Dresses</div>
+              <div class="product-name">Floral Midi Dress</div>
+              <div class="product-price-row">
+                <span class="product-price">$248</span>
+              </div>
+              <div class="product-stars">★★★★★ <span style="color:var(--text-soft);font-size:.75rem">(42)</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-category="outerwear" data-anim="fade-up" data-delay="200">
+          <div class="product-card">
+            <div class="product-img-wrap">
+              <div class="placeholder-img" style="background:linear-gradient(160deg,#3d3830,#2c2820);">🧥</div>
+              <div class="product-badge badge-limited">Limited</div>
+              <button class="product-wish" title="Add to wishlist"><i class="fa-regular fa-heart"></i></button>
+              <div class="product-overlay">
+                <button class="product-overlay-btn">
+                  <i class="fa-solid fa-bag-shopping me-2"></i>Add to Bag
+                </button>
+              </div>
+            </div>
+            <div class="product-body">
+              <div class="product-category">Outerwear</div>
+              <div class="product-name">Cashmere Coat</div>
+              <div class="product-price-row">
+                <span class="product-price">$590</span>
+              </div>
+              <div class="product-stars">★★★★★ <span style="color:var(--text-soft);font-size:.75rem">(18)</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-category="accessories" data-anim="fade-up" data-delay="300">
+          <div class="product-card">
+            <div class="product-img-wrap">
+              <div class="placeholder-img" style="background:linear-gradient(160deg,#c9a96e,#a8854a);">👜</div>
+              <div class="product-badge badge-sale">−20%</div>
+              <button class="product-wish" title="Add to wishlist"><i class="fa-regular fa-heart"></i></button>
+              <div class="product-overlay">
+                <button class="product-overlay-btn">
+                  <i class="fa-solid fa-bag-shopping me-2"></i>Add to Bag
+                </button>
+              </div>
+            </div>
+            <div class="product-body">
+              <div class="product-category">Accessories</div>
+              <div class="product-name">Structured Tote Bag</div>
+              <div class="product-price-row">
+                <span class="product-price">$192</span>
+                <span class="product-price-old">$240</span>
+              </div>
+              <div class="product-stars">★★★★☆ <span style="color:var(--text-soft);font-size:.75rem">(67)</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-category="tops" data-anim="fade-up" data-delay="400">
+          <div class="product-card">
+            <div class="product-img-wrap">
+              <div class="placeholder-img" style="background:linear-gradient(160deg,#e8c4b8,#d4a898);">👚</div>
+              <div class="product-badge badge-new">New</div>
+              <button class="product-wish" title="Add to wishlist"><i class="fa-regular fa-heart"></i></button>
+              <div class="product-overlay">
+                <button class="product-overlay-btn">
+                  <i class="fa-solid fa-bag-shopping me-2"></i>Add to Bag
+                </button>
+              </div>
+            </div>
+            <div class="product-body">
+              <div class="product-category">Tops</div>
+              <div class="product-name">Silk Blouse</div>
+              <div class="product-price-row">
+                <span class="product-price">$145</span>
+              </div>
+              <div class="product-stars">★★★★★ <span style="color:var(--text-soft);font-size:.75rem">(29)</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-category="dresses" data-anim="fade-up" data-delay="100">
+          <div class="product-card">
+            <div class="product-img-wrap">
+              <div class="placeholder-img" style="background:linear-gradient(160deg,#8fa888,#6a7f65);">🌿</div>
+              <button class="product-wish" title="Add to wishlist"><i class="fa-regular fa-heart"></i></button>
+              <div class="product-overlay">
+                <button class="product-overlay-btn">
+                  <i class="fa-solid fa-bag-shopping me-2"></i>Add to Bag
+                </button>
+              </div>
+            </div>
+            <div class="product-body">
+              <div class="product-category">Dresses</div>
+              <div class="product-name">Linen Wrap Dress</div>
+              <div class="product-price-row">
+                <span class="product-price">$198</span>
+              </div>
+              <div class="product-stars">★★★★★ <span style="color:var(--text-soft);font-size:.75rem">(53)</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 6 -->
+        <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-category="accessories" data-anim="fade-up" data-delay="200">
+          <div class="product-card">
+            <div class="product-img-wrap">
+              <div class="placeholder-img" style="background:linear-gradient(160deg,#d4c9bc,#e8ddd0);">✨</div>
+              <div class="product-badge badge-sale">−15%</div>
+              <button class="product-wish" title="Add to wishlist"><i class="fa-regular fa-heart"></i></button>
+              <div class="product-overlay">
+                <button class="product-overlay-btn">
+                  <i class="fa-solid fa-bag-shopping me-2"></i>Add to Bag
+                </button>
+              </div>
+            </div>
+            <div class="product-body">
+              <div class="product-category">Accessories</div>
+              <div class="product-name">Gold Chain Necklace</div>
+              <div class="product-price-row">
+                <span class="product-price">$85</span>
+                <span class="product-price-old">$100</span>
+              </div>
+              <div class="product-stars">★★★★☆ <span style="color:var(--text-soft);font-size:.75rem">(44)</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 7 -->
+        <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-category="tops" data-anim="fade-up" data-delay="300">
+          <div class="product-card">
+            <div class="product-img-wrap">
+              <div class="placeholder-img" style="background:linear-gradient(160deg,#1a1814,#3d3830);">🖤</div>
+              <div class="product-badge badge-new">New</div>
+              <button class="product-wish" title="Add to wishlist"><i class="fa-regular fa-heart"></i></button>
+              <div class="product-overlay">
+                <button class="product-overlay-btn">
+                  <i class="fa-solid fa-bag-shopping me-2"></i>Add to Bag
+                </button>
+              </div>
+            </div>
+            <div class="product-body">
+              <div class="product-category">Tops</div>
+              <div class="product-name">Merino Knit Top</div>
+              <div class="product-price-row">
+                <span class="product-price">$168</span>
+              </div>
+              <div class="product-stars">★★★★★ <span style="color:var(--text-soft);font-size:.75rem">(31)</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 8 -->
+        <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-category="outerwear" data-anim="fade-up" data-delay="400">
+          <div class="product-card">
+            <div class="product-img-wrap">
+              <div class="placeholder-img" style="background:linear-gradient(160deg,#c9a96e,#e8ddd0);">🌼</div>
+              <div class="product-badge badge-limited">Limited</div>
+              <button class="product-wish" title="Add to wishlist"><i class="fa-regular fa-heart"></i></button>
+              <div class="product-overlay">
+                <button class="product-overlay-btn">
+                  <i class="fa-solid fa-bag-shopping me-2"></i>Add to Bag
+                </button>
+              </div>
+            </div>
+            <div class="product-body">
+              <div class="product-category">Outerwear</div>
+              <div class="product-name">Trench Coat</div>
+              <div class="product-price-row">
+                <span class="product-price">$420</span>
+              </div>
+              <div class="product-stars">★★★★★ <span style="color:var(--text-soft);font-size:.75rem">(22)</span></div>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /product grid -->
+
+      <!-- View All button -->
+      <div class="text-center mt-5" data-anim="fade-up">
+        <a href="#" class="btn-outline-custom">
+          View Full Collection <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════
+       ABOUT SECTION
+  ═══════════════════════════════════════════════════════ -->
+  <section id="about">
+    <div class="container">
+      <div class="row align-items-center g-5">
+
+        <!-- Image -->
+        <div class="col-lg-5" data-anim="fade-right">
+          <div class="about-img-wrap">
+            <!-- Replace with your actual photo -->
+            <div class="about-img-main">
+              <!-- Decorative editorial layout -->
+              <div style="width:100%;padding:3rem;text-align:center;">
+                <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(4rem,10vw,8rem);font-weight:300;color:rgba(201,169,110,.1);letter-spacing:.08em;user-select:none;">É</div>
+                <div style="font-size:.72rem;letter-spacing:.3em;text-transform:uppercase;color:rgba(201,169,110,.3);margin-top:-1rem;font-family:'Plus Jakarta Sans',sans-serif;">Since 2010</div>
+              </div>
+            </div>
+            <div class="about-img-overlay">
+              <div class="big counter-num" data-target="15" data-suffix="">0</div>
+              <div class="sm">Years of Excellence</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Text -->
+        <div class="col-lg-7 about-text" data-anim="fade-left">
+          <div class="section-tag">Our Story</div>
+          <h2 class="section-title">A Legacy of<br><em>Timeless Elegance</em></h2>
+          <div class="gold-rule" style="width:fit-content;"><span>✦</span></div>
+
+          <p class="section-sub mt-3">
+            Founded in Paris in 2010, Maison Élise was born from a simple belief: that every woman deserves to feel extraordinary. Our founder, Élise Moreau, started with a single atelier and a vision to redefine accessible luxury.
+          </p>
+
+          <blockquote class="about-quote">
+            "Fashion is not just clothing — it is the language through which we tell our story to the world."
+            <cite style="display:block;font-size:.85rem;font-style:normal;color:rgba(201,169,110,.7);margin-top:.5rem;font-family:'Plus Jakarta Sans',sans-serif;">— Élise Moreau, Founder</cite>
+          </blockquote>
+
+          <p class="section-sub" style="margin-top:0;">
+            Today, our collections reach over 50 countries, blending Parisian sensibility with global craftsmanship. Every piece is ethically made and designed to last beyond seasons.
+          </p>
+
+          <!-- Stats -->
+          <div class="about-stats mt-4">
+            <div class="about-stat">
+              <div class="num counter-num" data-target="50" data-suffix="+">0</div>
+              <div class="label">Countries</div>
+            </div>
+            <div class="about-stat">
+              <div class="num counter-num" data-target="200" data-suffix="K+">0</div>
+              <div class="label">Customers</div>
+            </div>
+            <div class="about-stat">
+              <div class="num counter-num" data-target="500" data-suffix="+">0</div>
+              <div class="label">Styles</div>
+            </div>
+            <div class="about-stat">
+              <div class="num counter-num" data-target="4.9" data-suffix="★">0</div>
+              <div class="label">Avg. Rating</div>
+            </div>
+          </div>
+
+          <div class="mt-4">
+            <a href="#products" class="btn-gold">Explore Collection <i class="fa-solid fa-arrow-right ms-1"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════
+       TESTIMONIALS
+  ═══════════════════════════════════════════════════════ -->
+  <section id="testimonials">
+    <div class="container">
+
+      <div class="text-center mb-5">
+        <div class="section-tag" data-anim="fade-up">Client Reviews</div>
+        <h2 class="section-title" data-anim="fade-up" data-delay="100">
+          What Our Clients <em>Say</em>
+        </h2>
+      </div>
+
+      <div data-anim="fade-up" data-delay="200">
+        <!-- Carousel track -->
+        <div class="testimonial-track-wrap">
+          <div class="testimonial-track" id="testiTrack">
+
+            <!-- Slide 1 -->
+            <div class="testimonial-slide">
+              <div class="testimonial-card">
+                <div class="testi-stars">★★★★★</div>
+                <p class="testi-text">
+                  "I've been shopping with Maison Élise for three years and every single piece has been absolutely exquisite. The cashmere coat I bought last winter still looks as pristine as the day it arrived. Truly unmatched quality."
+                </p>
+                <div class="testi-author">
+                  <div class="testi-avatar">SC</div>
+                  <div>
+                    <div class="testi-name">Sophie Clément</div>
+                    <div class="testi-role">Fashion Blogger · Paris, France</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="testimonial-slide">
+              <div class="testimonial-card">
+                <div class="testi-stars">★★★★★</div>
+                <p class="testi-text">
+                  "The Silk Blouse I ordered arrived beautifully packaged, and the fabric is nothing short of divine. Their style concierge helped me pick the perfect size and pairing — such a personal, thoughtful service."
+                </p>
+                <div class="testi-author">
+                  <div class="testi-avatar">AK</div>
+                  <div>
+                    <div class="testi-name">Amelia Knight</div>
+                    <div class="testi-role">Creative Director · London, UK</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="testimonial-slide">
+              <div class="testimonial-card">
+                <div class="testi-stars">★★★★★</div>
+                <p class="testi-text">
+                  "I bought the Structured Tote for a work trip and got more compliments than I've ever received on any accessory. Three months in, it still looks brand new. Worth every single penny — this is what luxury means."
+                </p>
+                <div class="testi-author">
+                  <div class="testi-avatar">NR</div>
+                  <div>
+                    <div class="testi-name">Nadia Rossi</div>
+                    <div class="testi-role">Architect · Milan, Italy</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="testimonial-slide">
+              <div class="testimonial-card">
+                <div class="testi-stars">★★★★★</div>
+                <p class="testi-text">
+                  "The returns process was so seamless — I exchanged a dress for a different size and the new one arrived within two days with a handwritten note. The care they put into every customer interaction is extraordinary."
+                </p>
+                <div class="testi-author">
+                  <div class="testi-avatar">LW</div>
+                  <div>
+                    <div class="testi-name">Lena Weber</div>
+                    <div class="testi-role">Photographer · Berlin, Germany</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Controls -->
+        <div class="testimonial-controls">
+          <button class="testi-btn" id="testiPrev" aria-label="Previous review">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <div class="testi-dots" id="testiDots"></div>
+          <button class="testi-btn" id="testiNext" aria-label="Next review">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════
+       NEWSLETTER
+  ═══════════════════════════════════════════════════════ -->
+  <section id="newsletter">
+    <div class="container">
+      <div class="newsletter-inner">
+        <div class="section-tag" data-anim="fade-up">Stay in the Loop</div>
+        <h2 class="section-title" data-anim="fade-up" data-delay="100">
+          Join the <em>Élise</em> Circle
+        </h2>
+        <p class="section-sub" data-anim="fade-up" data-delay="200">
+          Subscribe for early access to new collections, exclusive member offers, and curated style notes delivered to your inbox.
+        </p>
+        <div data-anim="fade-up" data-delay="300">
+          <form class="newsletter-form" id="newsletterForm" novalidate>
+            <input
+              type="email"
+              class="newsletter-input"
+              id="newsletterEmail"
+              placeholder="Your email address..."
+              autocomplete="email"
+              required
+            />
+            <button type="submit" class="newsletter-submit">Subscribe</button>
+          </form>
+          <p class="newsletter-note">
+            <i class="fa-solid fa-lock" style="color:rgba(201,169,110,.4);"></i>
+            No spam, ever. Unsubscribe at any time.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════════════════ -->
+  <footer>
+    <div class="container">
+      <div class="row g-5">
+
+        <!-- Brand column -->
+        <div class="col-lg-4 col-md-6">
+          <div class="footer-logo">Maison<span> Élise</span></div>
+          <div class="footer-tagline">Paris · London · New York</div>
+          <p class="footer-about-text">
+            Curated luxury fashion since 2010. We believe in clothing that endures beyond trends — crafted for women who move through the world with intention.
+          </p>
+          <div class="social-links">
+            <a href="#" class="social-link" title="Instagram" aria-label="Instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#" class="social-link" title="Pinterest" aria-label="Pinterest">
+              <i class="fa-brands fa-pinterest-p"></i>
+            </a>
+            <a href="#" class="social-link" title="TikTok" aria-label="TikTok">
+              <i class="fa-brands fa-tiktok"></i>
+            </a>
+            <a href="#" class="social-link" title="Facebook" aria-label="Facebook">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="#" class="social-link" title="YouTube" aria-label="YouTube">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="col-lg-2 col-md-6 col-6">
+          <div class="footer-heading">Shop</div>
+          <ul class="footer-links">
+            <li><a href="#products">New Arrivals</a></li>
+            <li><a href="#products">Dresses</a></li>
+            <li><a href="#products">Tops & Blouses</a></li>
+            <li><a href="#products">Outerwear</a></li>
+            <li><a href="#products">Accessories</a></li>
+            <li><a href="#products">Sale</a></li>
+          </ul>
+        </div>
+
+        <!-- Help -->
+        <div class="col-lg-2 col-md-6 col-6">
+          <div class="footer-heading">Help</div>
+          <ul class="footer-links">
+            <li><a href="#">Size Guide</a></li>
+            <li><a href="#">Shipping & Delivery</a></li>
+            <li><a href="#">Returns & Exchanges</a></li>
+            <li><a href="#">Track Your Order</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div class="col-lg-4 col-md-6">
+          <div class="footer-heading">Contact Us</div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>14 Rue du Faubourg Saint-Honoré<br>75008 Paris, France</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-phone"></i>
+            <span>+33 1 42 68 00 00</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            <span>bonjour@maisonelise.com</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-clock"></i>
+            <span>Mon–Sat: 9:00–18:00 CET<br>Style Concierge 7 days/week</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom bar -->
+      <div class="footer-bottom">
+        <p>© 2026 Maison Élise. All rights reserved. Crafted with <i class="fa-solid fa-heart" style="color:var(--gold);"></i></p>
+        <p>
+          <a href="#">Privacy Policy</a> &nbsp;·&nbsp;
+          <a href="#">Terms of Service</a> &nbsp;·&nbsp;
+          <a href="#">Cookie Settings</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top button -->
+  <button id="backToTop" title="Back to top" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- Toast notification (injected by JS) -->
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom Script -->
+  <script src="js/script.js"></script>
+
+</body>
+</html>
